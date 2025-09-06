@@ -60,9 +60,14 @@ public:
         : T(T_), K(K_), S0(S0_), sigma(sigma_), r(r_), dt(dt_), dx(dx_), N(N_), M(M_) {}
 
     result_data evaluate_data_and_premium() const;
+    result_data evaluate_data_and_premium_barrier() const;
     std::string get_data_and_premium() const
     {
         return evaluate_data_and_premium();
+    }
+    std::string get_data_and_premium_barrier() const
+    {
+        return evaluate_data_and_premium_barrier();
     }
 };
 

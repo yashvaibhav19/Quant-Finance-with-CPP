@@ -3,7 +3,7 @@ CXX := g++
 CXXFLAGS := -std=c++17 -Wall -Iinclude -lpthread
 
 # Debug flags
-DEBUGFLAGS := -DDEBUG -ggdb3
+DEBUGFLAGS := -DDEBUG -ggdb3 -std=c++17 -Wall -Iinclude -lpthread
 
 # Directories
 SRC_DIR := src
